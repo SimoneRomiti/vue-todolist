@@ -14,6 +14,10 @@ h1{
   margin: 20px;
 }
 
+input{
+  height: 25px;
+}
+
 button{
   margin: 10px 0 20px;
   padding: 5px 10px;
@@ -23,11 +27,19 @@ ul{
   text-align: center;
 }
 
+li{
+  padding: 10px;
+  margin: 10px 0;
+  list-style: none;
+  font-size: 30px;
+}
+
 .delete{
   font-weight: 700;
   color: red;
   display: inline-block;
   transition: transform .2s;
+  margin-left: 15px;
 }
 
 .delete:hover{
@@ -35,13 +47,26 @@ ul{
   cursor: pointer;
 }
 
-.effects-enter, .effects-leave-to{
+.effects-enter{
   transform: translateX(15px);
   opacity: 0;
 }
-.effects-enter-active, .effects-leave-active{
+.effects-enter-active{
   transition: all .4s;
 }
-.effects-enter-to, .effects-leave{
+.effects-enter-to{
   opacity: 1;
+}
+
+.effects-leave{
+  text-decoration: line-through;
+  opacity: 1;
+}
+.effects-leave-active{
+  transition: all .6s;
+}
+.effects-leave-to{
+  text-decoration: line-through;
+  transform: translateX(100px);
+  opacity: 0;
 }
