@@ -10,7 +10,7 @@
     <div id="container">
       <h1>VUE TODOLIST</h1>
 
-      <input v-model="todo" type="text" name="" value="">
+      <input v-model="todo" type="text" name="" value="" @keydown="keywordAddElement()">
       <button type="button" name="button" @click="addElement()">ADD</button>
 
       <ul>

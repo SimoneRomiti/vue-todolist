@@ -19,6 +19,11 @@ var app = new Vue(
       },
       removeElement: function(i){
         this.todoList.splice(i, 1);
+      },
+      keywordAddElement: function(){
+        if(event.which == 13){
+          this.addElement();
+        }
       }
 
     }
