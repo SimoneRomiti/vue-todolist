@@ -14,13 +14,14 @@
       <button type="button" name="button" @click="addElement()">ADD</button>
 
       <ul>
-        <li v-for="(item, index) in todoList">
-          {{item}}
-          <span class="delete" @click="removeElement(index)">
-            {{done}}
-          </span>
-        </li>
-
+        <transition-group name="effects">
+          <li v-for="(item, index) in todoList" :key="item">
+            {{item}}
+            <span class="delete" @click="removeElement(index)">
+              {{done}}
+            </span>
+          </li>
+        </transition-group>
       </ul>
 
     </div>

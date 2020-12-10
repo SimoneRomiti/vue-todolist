@@ -10,7 +10,9 @@ var app = new Vue(
     data: {
       todoList: ["Fare colazione", "Lavarsi i denti", "Studiare", "Pranzare"],
       done: "X",
-      todo: ""
+      todo: "",
+      newclass: '',
+      classe: ""
     },
     methods: {
       addElement: function(){
@@ -24,8 +26,7 @@ var app = new Vue(
         if(event.which == 13){
           this.addElement();
         }
-      }
-
+      },
     }
   }
 )

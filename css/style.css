@@ -34,3 +34,14 @@ ul{
   transform: scale(1.5);
   cursor: pointer;
 }
+
+.effects-enter, .effects-leave-to{
+  transform: translateX(15px);
+  opacity: 0;
+}
+.effects-enter-active, .effects-leave-active{
+  transition: all .4s;
+}
+.effects-enter-to, .effects-leave{
+  opacity: 1;
+}
