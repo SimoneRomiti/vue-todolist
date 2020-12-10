@@ -12,6 +12,38 @@ var app = new Vue(
       done: "X",
       todo: "",
     },
+    // VARIANTE CON JQUERY DENTRO VUE PER HOVER SU SPAN ED EFFETTO SU LI
+    
+    // mounted: function(){
+    //   $(".delete").mouseover(
+    //     function(){
+    //       var x = $(this).parent();
+    //       x.addClass("scaled");
+    //     }
+    //   );
+    //
+    //   $(".delete").mouseleave(
+    //     function(){
+    //       var x = $(this).parent();
+    //       x.removeClass('scaled');
+    //     }
+    //   );
+    // },
+    // updated: function(){
+    //   $(".delete").mouseover(
+    //     function(){
+    //       var x = $(this).parent();
+    //       x.addClass("scaled");
+    //     }
+    //   );
+    //
+    //   $(".delete").mouseleave(
+    //     function(){
+    //       var x = $(this).parent();
+    //       x.removeClass('scaled');
+    //     }
+    //   );
+    // },
     methods: {
       addElement: function(){
         this.todoList.push(this.todo);
@@ -28,4 +60,4 @@ var app = new Vue(
       },
     }
   }
-)
+);

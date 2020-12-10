@@ -46,12 +46,22 @@ li{
   font-weight: 700;
   color: red;
   display: inline-block;
-  transition: transform .2s;
   margin-left: 15px;
+  transition: transform .3s;
 }
 
 .delete:hover{
   transform: scale(1.5);
+  cursor: pointer;
+}
+
+.not-scaled{
+  transform: scale(1.0);
+  transition: transform .3s;
+}
+.scaled{
+  transform: scale(1.1);
+  transition: transform .3s;
   cursor: pointer;
 }
 
