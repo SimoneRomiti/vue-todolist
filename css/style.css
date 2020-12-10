@@ -25,6 +25,13 @@ button{
 
 ul{
   text-align: center;
+  width: 40%;
+  background-image: url("../img/sfondo-postit.jpg");
+  background-size: cover;
+  background-position: top right;
+  min-height: 70vh;
+  box-shadow: 5px 5px 10px black;
+  margin-bottom: 20px;
 }
 
 li{
@@ -32,6 +39,7 @@ li{
   margin: 10px 0;
   list-style: none;
   font-size: 30px;
+  font-weight: 700;
 }
 
 .delete{

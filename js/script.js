@@ -11,8 +11,6 @@ var app = new Vue(
       todoList: ["Fare colazione", "Lavarsi i denti", "Studiare", "Pranzare"],
       done: "X",
       todo: "",
-      newclass: '',
-      classe: ""
     },
     methods: {
       addElement: function(){
@@ -21,6 +19,7 @@ var app = new Vue(
       },
       removeElement: function(i){
         this.todoList.splice(i, 1);
+        console.log(i);
       },
       keywordAddElement: function(){
         if(event.which == 13){
