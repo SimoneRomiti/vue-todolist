@@ -7,7 +7,23 @@
     <title></title>
   </head>
   <body>
+    <div id="container">
+      <h1>VUE TODOLIST</h1>
 
+      <input v-model="todo" type="text" name="" value="">
+      <button type="button" name="button" @click="addElement()">ADD</button>
+
+      <ul>
+        <li v-for="(item, index) in todoList">
+          {{item}}
+          <span class="delete" @click="removeElement(index)">
+            {{done}}
+          </span>
+        </li>
+
+      </ul>
+
+    </div>
 
     <script src="js/script.js" charset="utf-8"></script>
   </body>

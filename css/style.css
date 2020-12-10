@@ -1,0 +1,36 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1{
+  margin: 20px;
+}
+
+button{
+  margin: 10px 0 20px;
+  padding: 5px 10px;
+}
+
+ul{
+  text-align: center;
+}
+
+.delete{
+  font-weight: 700;
+  color: red;
+  display: inline-block;
+  transition: transform .2s;
+}
+
+.delete:hover{
+  transform: scale(1.5);
+  cursor: pointer;
+}
