@@ -16,9 +16,9 @@
 
       <ul>
         <transition-group name="effects">
-          <li v-for="(item, index) in todoList" :key="item" class="not-scaled">
+          <li v-for="(item, index) in todoList" :key="item" :class="(zoom == index) ? 'scaled' : 'not-scaled'">
             {{item}}
-            <span class="delete" @click="removeElement(index)">
+            <span class="delete" @click="removeElement(index)" @mouseenter="effectZoom(index)" @mouseleave="effectZoom(-1)">
               {{done}}
             </span>
           </li>

@@ -11,9 +11,10 @@ var app = new Vue(
       todoList: ["Fare colazione", "Lavarsi i denti", "Studiare", "Pranzare"],
       done: "X",
       todo: "",
+      zoom: -1
     },
     // VARIANTE CON JQUERY DENTRO VUE PER HOVER SU SPAN ED EFFETTO SU LI
-    
+
     // mounted: function(){
     //   $(".delete").mouseover(
     //     function(){
@@ -58,6 +59,10 @@ var app = new Vue(
           this.addElement();
         }
       },
+      effectZoom: function(i){
+        console.log("i", i);
+        this.zoom = i;
+      }
     }
   }
 );
