@@ -14,16 +14,16 @@
       <input v-model="todo" type="text" name="" value="" @keydown="keywordAddElement()">
       <button type="button" name="button" @click="addElement()">ADD</button>
 
-      <ul>
-        <transition-group name="effects">
-          <li v-for="(item, index) in todoList" :key="item" :class="(zoom == index) ? 'scaled' : 'not-scaled'">
-            {{item}}
-            <span class="delete" @click="removeElement(index)" @mouseenter="effectZoom(index)" @mouseleave="effectZoom(-1)">
-              {{done}}
-            </span>
-          </li>
-        </transition-group>
-      </ul>
+
+      <transition-group name="effects" tag="ul">
+        <li v-for="(item, index) in todoList" :key="item" :class="(zoom == index) ? 'scaled' : 'not-scaled'">
+          {{item}}
+          <span class="delete" @click="removeElement(index)" @mouseenter="effectZoom(index)" @mouseleave="effectZoom(-1)">
+            {{done}}
+          </span>
+        </li>
+      </transition-group>
+
 
     </div>
 

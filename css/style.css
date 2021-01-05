@@ -35,8 +35,8 @@ ul{
 }
 
 li{
-  padding: 10px;
-  margin: 10px 0;
+  padding: 10px 0;
+  /* margin: 10px 0; */
   list-style: none;
   font-size: 30px;
   font-weight: 700;
@@ -66,19 +66,25 @@ li{
 }
 
 .effects-enter{
-  transform: translateX(15px);
+  transform: translateX(100px);
   opacity: 0;
+  font-size: 0;
+  padding: 0;
 }
 .effects-enter-active{
   transition: all .4s;
 }
 .effects-enter-to{
   opacity: 1;
+  font-size: 30px;
+  padding: 10px 0;
 }
 
 .effects-leave{
   text-decoration: line-through;
   opacity: 1;
+  font-size: 30px;
+  padding: 10px 0;
 }
 .effects-leave-active{
   transition: all .6s;
@@ -87,4 +93,6 @@ li{
   text-decoration: line-through;
   transform: translateX(100px);
   opacity: 0;
+  font-size: 0;
+  padding: 0;
 }
